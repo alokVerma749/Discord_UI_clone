@@ -5,6 +5,7 @@ import plus from "../assets/plus.svg";
 
 const servers = [
     {
+        id: 121,
         name: "Direct Messages",
         DP: `${disCordSmall}`,
         items: [
@@ -16,6 +17,7 @@ const servers = [
         linkTo: "/dashboard"
     },
     {
+        id: 122,
         name: "Code Damn",
         DP: `${newLine}`,
         items: [
@@ -43,19 +45,22 @@ const servers = [
             "Ugly Naked Man",
             "Smelly Cat"
         ],
-        linkTo: "/codedamn"
+        linkTo: `/server/122`
     },
     {
+        id: 123,
         name: "Add a Server",
         DP: `${plus}`,
         linkTo: "/addserver"
     },
     {
+        id: 124,
         name: "Explore Public Servers",
         DP: `${disCordSmall}`,
         linkTo: "/explore_public_servers"
     },
     {
+        id: 125,
         name: "Download Apps",
         DP: `${disCordSmall}`,
         linkTo: "/download_apps"
