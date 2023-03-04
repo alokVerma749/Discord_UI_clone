@@ -17,7 +17,7 @@ const ServerMenuBar = () => {
           Text Channels <span className="ml-10 text-lg font-medium p-2">^</span>
         </p>
         {data[0].items.map((item) => {
-          return <li># {item.name}</li>;
+          return <li key={item.name}># {item.name}</li>;
         })}
       </ul>
     </div>

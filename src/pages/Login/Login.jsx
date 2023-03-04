@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("clicked");
   };
   return (
     <>

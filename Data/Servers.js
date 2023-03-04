@@ -26,8 +26,8 @@ const servers = [
             { name: "blogging" },
             { name: "course ideas" },
             { name: "machine learning" },
-            { name: "machine learning" },
-            { name: "machine learning" },
+            { name: "Node Js" },
+            { name: "JavaScript" },
         ],
         onlineUsers: [
             "Milad",
