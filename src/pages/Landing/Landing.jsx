@@ -9,7 +9,9 @@ const Landing = () => {
   return (
     <div className="landing relative bg-[#2e3bc8] h-screen">
       <header className="flex flex-row justify-evenly p-5 text-center font relative z-30">
-        <img src={discordLogo} alt="discord" />
+        <Link to="/dashboard">
+          <img src={discordLogo} alt="discord" />
+        </Link>
         <nav>
           <ul className="list-none flex flex-row w-fit space-x-10 text-white font-semibold p-2">
             <li>Download</li>
