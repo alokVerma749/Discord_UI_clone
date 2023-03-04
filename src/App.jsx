@@ -3,7 +3,7 @@ import Landing from "./pages/Landing/Landing";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import Server from "./pages/DiscordServer/server";
+import Server from "./pages/DiscordServer/server.jsx";
 import Error from "./pages/Error";
 
 function App() {
