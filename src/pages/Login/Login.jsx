@@ -3,13 +3,15 @@ import login_bg from "../../../assets/login_bg.svg";
 import qr from "../../../assets/qr_code.png";
 import { Link } from "react-router-dom";
 
+function loadRegister() {
+  import("../Register/Register");
+}
 const Login = () => {
   const handleClick = (e) => {
     e.preventDefault();
   };
   return (
     <>
-      {/* BG */}
       <div
         className="relative z-0 bg-cover bg-center h-screen"
         style={{ backgroundImage: `url(${login_bg})` }}
@@ -17,7 +19,6 @@ const Login = () => {
         <Link to={"/"}>
           <img src={discordLogo} alt="discord" className="p-5" />
         </Link>
-        {/* Form Div */}
         <div className="bg-[#353535] text-white w-1/2 flex flex-row mx-auto">
           <div className="flex flex-col mx-auto  p-5">
             <p className="p-2 text-2xl font-extrabold text-white">
@@ -49,7 +50,7 @@ const Login = () => {
               </button>
               <p>
                 Need an account?{" "}
-                <span>
+                <span onMouseEnter={loadRegister}>
                   <Link to="/register" className="font-semibold text-[#3682c3]">
                     Register
                   </Link>
