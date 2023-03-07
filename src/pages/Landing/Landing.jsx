@@ -82,13 +82,6 @@ const Landing = () => {
               className="w-5/12 h-fit"
             />
           </div>
-          {/* <div className="absolute bottom-0 h-screen z-0">
-          <img
-            src={cloudeImg}
-            alt="cloud_background"
-            className="bg-contain bg-center"
-          />
-        </div> */}
         </div>
       </div>
       <React.Suspense fallback={<p>Loading....</p>}>
