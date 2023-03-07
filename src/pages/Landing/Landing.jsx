@@ -1,14 +1,16 @@
+import React from "react";
+
 import discordLogo from "../../../assets/discord_main_logo.svg";
 import left_bg_landing_header from "../../../assets/left_bg_landing_header.svg";
 import right_bg_landing_header from "../../../assets/right_bg_landing_header.svg";
 import cloudeImg from "../../../assets/center_bg_landing_header.svg";
 
 import { Link } from "react-router-dom";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Footer from "./components/Footer";
+const Section2 = React.lazy(() => import("./components/Section2"));
+const Section3 = React.lazy(() => import("./components/Section3"));
+const Section4 = React.lazy(() => import("./components/Section4"));
+const Section5 = React.lazy(() => import("./components/Section5"));
+const Footer = React.lazy(() => import("./components/Footer"));
 
 function loadDashboard() {
   import("../Dashboard/Dashboard");
@@ -89,11 +91,21 @@ const Landing = () => {
         </div> */}
         </div>
       </div>
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Footer />
+      <React.Suspense fallback={<p>Loading....</p>}>
+        <Section2 />
+      </React.Suspense>
+      <React.Suspense fallback={<p>Loading....</p>}>
+        <Section3 />
+      </React.Suspense>
+      <React.Suspense fallback={<p>Loading....</p>}>
+        <Section4 />
+      </React.Suspense>
+      <React.Suspense fallback={<p>Loading....</p>}>
+        <Section5 />
+      </React.Suspense>
+      <React.Suspense fallback={<p>Loading....</p>}>
+        <Footer />
+      </React.Suspense>
     </>
   );
 };
