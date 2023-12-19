@@ -1,5 +1,7 @@
 # Codedamn Projects - Discord UI Clone
-![main image](https://raw.githubusercontent.com/codedamn-projects/discord-ui-clone/master/designs/cover-image.png)
+
+![image](https://github.com/alokVerma749/Discord_UI_clone/assets/87599400/ca8ff969-82c9-49ca-82ef-89de50664e52)
+
 
 ## Hello developer!
 
